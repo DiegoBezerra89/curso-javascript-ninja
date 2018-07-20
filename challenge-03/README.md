@@ -195,9 +195,9 @@ pessoa.apresentacao = function(){
     if(caminhouQuantosMetros === 1){
         caminho = 'metro';
     }
-    return 'Olá, eu sou '+ sexo +' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idadeAnos + ', ' +           pessoa.altura + ', meu peso é ' + pessoa.peso + ' kg e, só hoje, eu já caminhei '+ pessoa.caminhouQuantosMetros +' + caminho + '!';
+    return 'Olá, eu sou '+ sexo +' ' + pessoa.nome + ' ' + pessoa.sobrenome + ', tenho ' + pessoa.idade + ' ' + idadeAnos + ', ' +           pessoa.altura + ', meu peso é ' + pessoa.peso + ' kg e, só hoje, eu já caminhei '+ pessoa.caminhouQuantosMetros +' ' + caminho + '!';
     
     }
 // Agora, apresente-se ;
 pessoa.apresentacao();
-//'Olá, eu sou o Diego Bezerra, tenho 31 anos, 1.74, meu peso é 77 kg e, só hoje eu caminhei 7 metros.
+//Olá, eu sou o Diego Bezerra, tenho 31 anos, 1.74, meu peso é 77 kg e, só hoje eu caminhei 7 metros.
