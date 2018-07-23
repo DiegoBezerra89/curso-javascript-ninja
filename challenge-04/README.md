@@ -116,10 +116,10 @@ citado acima, no lugar de "pessoas".
   if(carro.quantidadePessoas >= 5){
       return 'Carro já está lotado!';
   }
-  if(x + carro.quantidadePessoas > 5){
+  if(x + carro.quantidadePessoas > 5 && carro.quantidadePessoas < 4){
       return 'Só cabem mais ' + (5 - carro.quantidadePessoas) + ' no carro!';
   }
-  if(5 - carro.quantidadePessoas == 1 && x + carr.quantidadePessoas >  5){
+  if(x + carro.quantidadePessoas >  5 && carro.quantidadePessoas == 4){
       return 'Só cabe mais uma pessoa no carro!';
   }
   carro.quantidadePessoas += x;
