@@ -1,6 +1,6 @@
 # Desafio Semana #1
 
-```js
+
 // Declarar uma variável chamada `myvar`, sem valor.
 var myvar;
 
@@ -17,7 +17,7 @@ soma++;
 soma *= 3;
 
 // Qual é o valor da variável `soma` até aqui?
-console.log(soma);
+console.log(soma); //72
 
 // Declare uma variável chamada `souninja`, atribuindo à ela o valor booleano que representa `verdadeiro`.
 var souNinja = true;
