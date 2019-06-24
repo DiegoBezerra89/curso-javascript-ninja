@@ -7,7 +7,7 @@ var myArray = [1,'4','Diego',true,{carro: 'azul' }, ['a1','a2','a3']];
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.
 A função deverá retornar o array atualizado.
 */
-var addItem = function(item) {
+function addItem(item) {
     myArray.push(item);
     return myArray;
 }
@@ -16,8 +16,8 @@ var addItem = function(item) {
 Adicione um novo array ao array criado no início do desafio, com ao menos 3
 itens de tipos diferentes, mostrando o resultado no console.
 */
-addItem([1,'Renata',false]);
-console.log(myArray);
+
+console.log(addItem([1,'Renata',false]));
 
 /*
 Mostre no console o segundo elemento desse último array, criado acima, com a
@@ -67,10 +67,10 @@ Só vamos mudar o range:
 */
 console.log( 'Números pares entre 100 e 120:' );
 for(var counter = 100; counter <= 120; counter+=2 ) {
-    console.log(counter);
+    console.log(counter); //counter % 2 === 0 ? console.log(counter) : ''; counter++;
 }
 
 console.log( 'Números ímpares entre 111 e 125:' );
-for(var counter = 101; counter <= 119; counter+=2 ) {
-    console.log(counter);
+for(counter = 101; counter <= 119; counter+=2 ) {
+    console.log(counter); //counter % 2 !== 0 ? console.log(counter) : ''; counter++;
 }
