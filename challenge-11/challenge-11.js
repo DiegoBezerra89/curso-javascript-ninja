@@ -84,4 +84,6 @@
     }
     console.log(numbers);
 
+    var arr = [1,3,8,4,9,2,];
+    console.log(arr.sort());
 })();

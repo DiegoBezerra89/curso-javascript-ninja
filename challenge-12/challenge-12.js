@@ -18,10 +18,11 @@
         age: 29
     }
     console.log( 'Propriedades de "person":' );
-    //console.log(Object.getOwnPropertyNames(person));
-    for(var prop in person){
-        console.log(prop);
-    }
+    console.log(Object.keys( person ));
+    // console.log(Object.getOwnPropertyNames(person));
+    //  for(var prop in person){
+    //      console.log(prop);
+    //  }
     
     /*
     Mostre no console, em um array, todas as propriedades do objeto acima.
@@ -44,7 +45,7 @@
     books.push({name: 'Harry Pobre', pages: 23});
     books.push({name: 'Game of trones', pages: 20800});
     console.log( '\nLista de livros:' );
-    console.log('Livros: ' + books[0].name + ', ' + books[1].name + ' e ' + books[2].name + ' .');
+    console.log(books);
     /*
     Mostre no console todos os livros.
     */
@@ -59,14 +60,14 @@
     /*
     Mostre no console os livros restantes.
     */
-   console.log('Livros: ' + books[0].name + ', ' + books[1].name + '.');
+   console.log(books);
 
     /*
     Converta os objetos que ficaram em `books` para strings.
     */
     // ?
     console.log( '\nLivros em formato string:' );
-    JSON.stringify(books);
+    books = JSON.stringify(books);
     /*
     Mostre os livros nesse formato no console:
     */
@@ -75,7 +76,7 @@
     /*
     Converta os livros novamente para objeto.
     */
-    JSON.parse(books);
+    books = JSON.parse(books);
     console.log( '\nAgora os livros são objetos novamente:' );
 
     /*
@@ -83,7 +84,11 @@
     no formato abaixo:
         "[PROPRIEDADE]: [VALOR]"
     */
-    // ?
+    for(var i = 0; i < books.length; i++) { //books é um array, logo tem length.
+        for(var prop in books[i]) {
+            console.log(prop + ': ' + books[i][prop]);
+        } 
+    }
 
     /*
     Crie um array chamado `myName`. Cada item desse array deve ser uma letra do
